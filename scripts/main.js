@@ -31,8 +31,11 @@ let myImage = document.querySelector('img');
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/COUCOU.JPG') {
+      alert('Ouch! Stop poking me - Before Christo !');
       myImage.setAttribute('src','images/CHRISTO.JPG');
     } else {
+      alert('Ouch! Stop poking me - Before Coucou !');
+
       myImage.setAttribute('src','images/COUCOU.JPG');
     }
 }
